@@ -12,15 +12,71 @@
   }
 
   .header-container { 
-    max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
-  .header-logo img { height: 45px; width: auto; }
-  .header-nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
-  .header-nav a { display: block; padding: 14px 10px; color: #fff; background: #e30613; text-decoration: none; }
-  .site-footer { background: #000; color: #fff; padding: 40px 20px 20px; }
-  .footer-container { display: flex; max-width: 1200px; margin: 0 auto; gap: 40px; flex-wrap: wrap; }
-  .footer-logo { height: 100px; margin: 15px 0; }
-  .footer-cities { font-size: 40px; font-weight: 700; }
-  .footer-bottom { text-align: center; padding: 15px; background: white; color: black; font-size: 14px; }
+  max-width: 1400px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.header-logo img { 
+  height: 45px; 
+  width: auto; 
+}
+
+.header-nav ul { 
+  list-style: none; 
+  display: flex; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.header-nav a { 
+  display: block; 
+  padding: 14px 10px; 
+  color: #fff; 
+  background: #e30613; 
+  text-decoration: none; 
+}
+
+.site-footer { 
+  background: #000; 
+
+
+  .text-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .text-left {
+    flex: 1 1 500px; /* texte prend au moins 500px */
+  }
+
+  .text-left h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .text-left p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .image-right {
+    flex: 1 1 400px; /* image prend au moins 400px */
+  }
+
+  .image-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
 </style>
 </head>
 <body>
@@ -39,7 +95,24 @@
 </header>
 
 <main>
-  <!-- Contenu principal ici -->
+  <section class="text-img-section">
+    <div class="text-img-container">
+      <!-- Texte à gauche -->
+      <div class="text-left">
+        <h2>Formations post-bac</h2>
+        <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+        <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+        <p>Au cours de ces 3 années, les élèves acquièrent une solide formation dans les sciences et les technologies numériques tout en approfondissant une spécialité dès la première année après le baccalauréat. Plusieurs passerelles sont possibles durant les 3 premières années si l’étudiant souhaite changer de cycle.</p>
+        <p>Après la deuxième année, il est possible de choisir une poursuite d’études sous statut étudiant ou d’opter pour un contrat d’apprentissage.</p>
+        <p>Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
+      </div>
+
+      <!-- Image à droite -->
+      <div class="image-right">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" alt="Schéma des études ISEN Ouest">
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
