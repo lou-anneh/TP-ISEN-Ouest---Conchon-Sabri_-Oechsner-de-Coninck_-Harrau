@@ -62,6 +62,43 @@
       text-decoration: underline;
     }
 
+    /* --- PLUGIN TEXT_IMAGE --- */
+    .text-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .text-image img {
+      width: 500px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .text-image-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .text-image-content h2 {
+      font-size: 2em;
+      font-weight: 700;
+      color: #e30613;
+      margin-bottom: 20px;
+    }
+
+    .text-image-content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
     /* --- FOOTER --- */
     .site-footer {
       background: #000;
@@ -76,34 +113,17 @@
       margin: 0 auto;
       gap: 40px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .footer-col-logo {
       flex: 1;
       min-width: 220px;
-      display: flex;
-      flex-direction: column;
     }
 
     .footer-logo {
       height: 100px;
-      margin-bottom: 15px;
-      margin-top: 30px;
-    }
-
-    .btn-contact {
-      display: block;
-      padding: 10px 20px;
-      background: #c8102e;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 25px;
-      margin: auto;
-    }
-
-    .btn-contact:hover {
-      background: #a00b23;
+      margin-top: 20px;
     }
 
     .footer-links-section {
@@ -119,42 +139,6 @@
       margin-bottom: 20px;
     }
 
-    .footer-links-container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .footer-col {
-      width: 25%;
-    }
-
-    .footer-col h3 {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .footer-col ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .footer-col li {
-      margin-bottom: 8px;
-    }
-
-    .footer-col a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer-col a:hover {
-      text-decoration: underline;
-    }
-
     .footer-bottom {
       text-align: center;
       padding-top: 15px;
@@ -167,7 +151,8 @@
 </head>
 
 <body>
-  <!-- HEADER -->
+
+  <!-- HEADER_SIMPLE -->
   <header class="header-isen">
     <div class="header-container">
       <a href="/" class="header-logo">
@@ -181,18 +166,24 @@
     </div>
   </header>
 
-  <!-- CONTENU DE LA PAGE -->
-  <main style="min-height: 400px; padding: 40px; text-align: center;">
-    <h1>Bienvenue sur le site ISEN Ouest</h1>
-    <p>Contenu à venir...</p>
-  </main>
+  <!-- PLUGIN TEXT_IMAGE -->
+  <section class="text-image">
+    <div class="text-image-content">
+      <h2>Devenir ingénieur</h2>
+      <p>Parce que les technologies et l’IA sont partout, l’ISEN Ouest forme des ingénieurs aptes à répondre aux besoins des entreprises dans tous les secteurs d’activités.</p>
+      <p>Après le baccalauréat, vous optez pour un cycle de formation en 3 ans centré sur les sciences appliquées, le numérique et l’IA. En fonction de votre profil, sept cursus différents sont proposés. Pendant ces trois premières années, vous réfléchissez à votre projet professionnel et vous pouvez changer de cursus.</p>
+      <p>Ensuite, vous accédez sans critère de classement aux domaines professionnels proposés par l’ISEN Ouest. C’est le temps de la spécialisation.</p>
+      <p>La formation d’ingénieur généraliste ne se limite pas aux matières techniques ou scientifiques. Les élèves-ingénieurs apprennent à communiquer, à manager, à prendre de la hauteur sur leurs activités et surtout, comme personne ne connait les technologies de demain, ils apprennent à apprendre.</p>
+    </div>
 
-  <!-- FOOTER -->
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/08/21/science-et-numerique.jpg" alt="Science et numérique">
+  </section>
+
+  <!-- FOOTER_SIMPLE -->
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-col footer-col-logo">
+      <div class="footer-col-logo">
         <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
-        <a href="#" class="btn-contact">Nous contacter</a>
       </div>
 
       <div class="footer-links-section">
@@ -204,5 +195,6 @@
   <div class="footer-bottom">
     © 2025 ISEN Ouest — Tous droits réservés
   </div>
+
 </body>
 </html>
