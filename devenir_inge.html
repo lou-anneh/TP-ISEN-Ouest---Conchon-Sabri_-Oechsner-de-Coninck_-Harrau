@@ -1,20 +1,200 @@
-<!-- HEADER_SIMPLE  -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISEN Ouest</title>
+  <style>
+    html {
+      font-family: "Open Sans", sans-serif;
+    }
 
+    /* --- HEADER --- */
+    .header-isen {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+    }
 
-<!-- PLUGIN TEXT_IMAGE
-	Devenir ingénieur
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-	Parce que les technologies et l’IA sont partout, l’ISEN Ouest forme des ingénieurs aptes à répondre aux besoins des entreprises dans tous les secteurs d’activités.
+    .header-logo img {
+      height: 45px;
+      width: auto;
+    }
 
-	Après le baccalauréat, vous optez pour un cycle de formation en 3 ans centré sur les sciences appliquées, le numérique et l’IA. En fonction de votre profil, sept cursus différents sont proposés. Pendant ces trois premières années, vous réfléchissez à votre projet professionnel et vous pouvez changer de cursus.
+    .header-nav {
+      background: #e30613;
+      flex: 1;
+      margin-left: 40px;
+    }
 
-	Ensuite, vous accédez sans critère de classement aux domaines professionnels proposés par l’ISEN Ouest. C’est le temps de la spécialisation.
+    .header-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
 
-	La formation d’ingénieur généraliste ne se limite pas aux matières techniques ou scientifiques. Les élèves-ingénieurs apprennent à communiquer, à manager, à prendre de la hauteur sur leurs activités et surtout, comme personne ne connait les technologies de demain, ils apprennent à apprendre.
+    .header-nav li {
+      flex: 1;
+      text-align: center;
+    }
 
-	https://isen-ouest.fr/wp-content/uploads/2024/08/21/science-et-numerique.jpg
--->
+    .header-nav a {
+      display: block;
+      padding: 14px 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
 
+    .header-nav a:hover {
+      text-decoration: underline;
+    }
 
+    /* --- PLUGIN TEXT_IMAGE --- */
+    .text-image {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+      gap: 40px;
+    }
 
-<!-- FOOTER_SIMPLE -->
+    .text-image img {
+      width: 500px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .text-image-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .text-image-content h2 {
+      font-size: 2em;
+      font-weight: 700;
+      color: #e30613;
+      margin-bottom: 20px;
+    }
+
+    .text-image-content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    /* --- FOOTER --- */
+    .site-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-col-logo {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    .footer-links-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-cities {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 15px;
+      background-color: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER_SIMPLE -->
+  <header class="header-isen">
+    <div class="header-container">
+      <a href="/" class="header-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Liens à venir</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PLUGIN TEXT_IMAGE -->
+  <section class="text-image">
+    <div class="text-image-content">
+      <h2>Devenir ingénieur</h2>
+      <p>Parce que les technologies et l’IA sont partout, l’ISEN Ouest forme des ingénieurs aptes à répondre aux besoins des entreprises dans tous les secteurs d’activités.</p>
+      <p>Après le baccalauréat, vous optez pour un cycle de formation en 3 ans centré sur les sciences appliquées, le numérique et l’IA. En fonction de votre profil, sept cursus différents sont proposés. Pendant ces trois premières années, vous réfléchissez à votre projet professionnel et vous pouvez changer de cursus.</p>
+      <p>Ensuite, vous accédez sans critère de classement aux domaines professionnels proposés par l’ISEN Ouest. C’est le temps de la spécialisation.</p>
+      <p>La formation d’ingénieur généraliste ne se limite pas aux matières techniques ou scientifiques. Les élèves-ingénieurs apprennent à communiquer, à manager, à prendre de la hauteur sur leurs activités et surtout, comme personne ne connait les technologies de demain, ils apprennent à apprendre.</p>
+    </div>
+
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/08/21/science-et-numerique.jpg" alt="Science et numérique">
+  </section>
+
+  <!-- FOOTER_SIMPLE -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
+      </div>
+
+      <div class="footer-links-section">
+        <p class="footer-cities">Texte à venir</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    © 2025 ISEN Ouest — Tous droits réservés
+  </div>
+
+</body>
+</html>
