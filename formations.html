@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page ISEN</title>
   <style>
-    html { font-family: Open Sans, sans-serif; }
+    html { font-family: Open Sans, Arial, sans-serif; }
     body { margin: 0; }
 
     /* --- HEADER --- */
@@ -50,46 +50,48 @@
 
     /* --- SECTION FORMATIONS --- */
     .formations-ingenieurs {
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
+    max-width: 1200px;
+    margin: 48px auto 0 auto;
+    padding: 0 20px;
     }
 
-    .formations-ingenieurs h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 40px;
+    .formations-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: left;
+    color: #111;
+    margin-left: 16px;
     }
 
-    /* conteneur d'images manquant */
-    .formations-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    .formations-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    padding-left: 16px;
     }
 
-    .formations-grid a {
-      display: block;
-      width: 300px;
-      height: 200px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-      transition: transform 0.2s;
+    .formation-card {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+    overflow: hidden;
+    width: 270px;
+    height: 260px;
+    transition: transform 0.16s;
+    text-align: center;
     }
 
-    .formations-grid a:hover {
-      transform: scale(1.03);
+    .formation-card:hover {
+    transform: translateY(-6px) scale(1.03);
     }
 
-    .formations-grid img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    .formation-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     }
 
     /* --- FOOTER --- */
@@ -138,19 +140,21 @@
 
   <!-- SECTION : Nos formations ingénieurs -->
   <section class="formations-ingenieurs">
-    <h2>Nos formations ingénieurs</h2>
-    <div class="formations-grid">
-      <a href="https://isen-ouest.fr" target="_blank">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
-      </a>
-      <a href="https://isen-ouest.fr" target="_blank">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
-      </a>
-      <a href="https://isen-ouest.fr" target="_blank">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
-      </a>
-    </div>
-  </section>
+  <div class="formations-title">
+    Nos formations ingénieurs
+  </div>
+  <div class="formations-row">
+    <a href="https://isen-ouest.fr" target="_blank" class="formation-card">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+    </a>
+    <a href="https://isen-ouest.fr" target="_blank" class="formation-card">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+    </a>
+    <a href="https://isen-ouest.fr" target="_blank" class="formation-card">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+    </a>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
