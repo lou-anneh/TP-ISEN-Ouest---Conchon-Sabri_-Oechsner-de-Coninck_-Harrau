@@ -45,7 +45,38 @@
       transition: background 0.2s;
     }
     .header-nav a:hover { text-decoration: underline; }
-
+    /* --- FORMATIONS INGÉNIEURS --- */
+    .formations-ingenieurs {
+      max-width: 1200px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .formations-ingenieurs h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #000;
+    }
+    .formations-grid {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .formations-grid a {
+      display: block;
+      transition: transform 0.2s;
+    }
+    .formations-grid a:hover {
+      transform: scale(1.05);
+    }
+    .formations-grid img {
+      width: 280px;
+      max-width: 90vw;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.09);
+      background: #fff;
+    }
     /* --- FOOTER --- */
     .site-footer {
       background: #000;
@@ -90,7 +121,21 @@
     </div>
   </header>
 
-  <!-- Contenu principal ici -->
+  <!-- PLUGIN IMAGES: Nos formations ingénieurs -->
+  <section class="formations-ingenieurs">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="formations-grid">
+      <a href="https://isen-ouest.fr" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+      </a>
+      <a href="https://isen-ouest.fr" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+      </a>
+      <a href="https://isen-ouest.fr" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+      </a>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="footer-container">
